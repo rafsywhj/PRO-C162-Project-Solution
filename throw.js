@@ -39,7 +39,10 @@ AFRAME.registerComponent("bowling-balls", {
         });
 
         //add the collide event listener to the bullet
-        ball.addEventListener("collide", this.removeBall);
+
+
+
+        
 
         scene.appendChild(ball);
       }
@@ -64,11 +67,16 @@ AFRAME.registerComponent("bowling-balls", {
       elementHit.body.applyForce(impulse, worldPoint);
 
       //remove event listener
-      element.removeEventListener("collide", this.removeBall);
+
+
+      
 
       //remove the bullets from the scene
-      var scene = document.querySelector("#scene");
-      scene.removeChild(element);
+     
+
+
+
+      
     }
   },
 });
